@@ -11,7 +11,7 @@ Java_com_lhj_ndkjniactivity_CTest_ctest(JNIEnv *env, jobject instance, jint a, j
 }
 
 JNIEXPORT void JNICALL
-Java_com_lhj_ndkjniactivity_CTest_cInvokingJava(
+Java_com_lhj_ndkjniactivity_CTest_CInvokingJava(
         JNIEnv *env,
         jobject instance) {
     jclass jclazz = (*env)->FindClass(env, "com/lhj/ndkjniactivity/CTest");

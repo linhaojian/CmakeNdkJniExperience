@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+<!-- 主体背景颜色值FF705A(red) -->
+<item > 
+     <shape>
+         <gradient
+             android:startColor="#2abbd0"
+             android:endColor="#2bb9d0"
+             android:angle="270"
+             />
+     </shape>
+</item>
+</layer-list>

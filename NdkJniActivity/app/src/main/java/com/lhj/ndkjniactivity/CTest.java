@@ -2,6 +2,7 @@ package com.lhj.ndkjniactivity;
 
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -11,7 +12,7 @@ import java.util.Random;
 
 public class CTest {
     public native int ctest(int a,int b);
-    public native void cInvokingJava();
+    public native void CInvokingJava();
 
     static {
         System.loadLibrary("testc-lib");
@@ -20,8 +21,8 @@ public class CTest {
     /**
      *  c调用java
      */
-    private void ctestInvokingJava(String str){
-        Log.e("lhj",""+str);
+    public void ctestInvokingJava(String str){
+        Log.e("linhaojian","str : "+str);
     }
 
 }

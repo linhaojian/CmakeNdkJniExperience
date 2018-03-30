@@ -1,11 +1,25 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 允许使用transitions -->
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <!-- 指定shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition" tools:targetApi="lollipop">
+            @transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition" tools:targetApi="lollipop">
+            @transition/change_image_transform</item>
+        <!--
+            设置进入动画      通过分解方式进入
+            <item name="android:windowEnterTransition" tools:targetApi="lollipop">@transition/change_image_transform1</item>
+            设置退出动画      通过分解方式退出
+            <item name="android:windowExitTransition" tools:targetApi="lollipop">@transition/change_image_transform1</item>
+        -->
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
 </resources>
